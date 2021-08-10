@@ -1,0 +1,21 @@
+add       $s3,      $s0,      $s1
+sub       $s5,      $s4,      $s3
+add       $s7,      $s10,     $s11
+and       $s9,      $s6,      $s7
+or        $s9,      $s6,      $s7
+xor       $s9,      $s6,      $s7
+cmp       $s9,      $s5,      $s6
+jz        10
+cmp       $s9,      $s5,      $s5
+jz        11
+not       $s9,      $s5
+add       $s7,      $s0,      $s3
+sub       $s3,      $s1,      $s0
+add       $s3,      $s2,      $s3
+not       $s9,      $s5
+j         17
+not       $s9,      $s5
+add       $s3,      $s0,      $s1
+and       $s9,      $s5,      $s6
+sw        $s2,      2
+lw        $s4,      2
